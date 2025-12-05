@@ -1,0 +1,33 @@
+{
+  "name": "caelune-lore-relay",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "homepage": "https://github.com/Regular-Game-Studio/Caelune-Lore-Relay#readme",
+  "bugs": {
+    "url": "https://github.com/Regular-Game-Studio/Caelune-Lore-Relay/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Regular-Game-Studio/Caelune-Lore-Relay.git"
+  },
+  "license": "GPL-2.0",
+  "author": "marc2h9",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "preview": "node ./dist/index.js",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "discord.js": "^14.25.1",
+    "jest": "^30.2.0",
+    "typescript": "^5.9.3"
+  }
+}
