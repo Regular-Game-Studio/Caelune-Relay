@@ -29,7 +29,7 @@ async function loadCommands(): Promise<Collection<any, any>> {
             const command = mod.default ?? mod;
 
             if (command && 'data' in command && 'execute' in command) {
-                commands.set(command.data.name, command);
+                await commands.set(command.data.name, command);
             } else {
                 console.warn(`[WARNING] ${filePath} missing "data" or "execute" on default export`);
             }
