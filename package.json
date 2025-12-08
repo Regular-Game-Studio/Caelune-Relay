@@ -23,7 +23,8 @@
     "build": "tsc",
     "clean": "rm -rf dist/*",
     "preview": "node ./dist/index.js",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "deploy": "node ./dist/services/commands/deployer.js"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.1",
