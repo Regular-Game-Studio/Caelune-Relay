@@ -1,4 +1,5 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder, type InteractionDeferReplyOptions } from "discord.js";
+import embedstatuscolors from "../../../enums/embedstatus.js";
 
 export default {
     cooldown: 5,
@@ -14,7 +15,7 @@ export default {
         const apiLatency = sent.createdTimestamp - interaction.createdTimestamp;
 
         const embed = new EmbedBuilder()
-            .setColor("#5865F2")
+            .setColor(embedstatuscolors.ok)
             .setTitle("Pong!")
             .addFields(
                 {name: 'Bot roundtrip', value:`${wsLatency}ms`, inline: true},

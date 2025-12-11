@@ -9,6 +9,7 @@ const discord_token = process.env.DISCORD_TOKEN;
 const client = new Client({ intents: [GatewayIntentBits.Guilds]});
 
 client.commands = await loadCommands();
+client.cooldowns = new Collection();
 
 await loadEvents(client);
 
